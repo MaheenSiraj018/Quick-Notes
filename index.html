@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Quick Notes</title>
+</head>
+
+
+<body>
+    <div class="mainheader">
+        <h1 id="h1">Quick Notes</h1>
+    </div>
+    <div id="main" class="results">
+        <div id="1" class="n1 n1color">
+            <div class="header">
+                <button type="button" class="buttons" onclick="createnote()">+</button>
+                <button type="button" class="savebtn" onclick="editnote('t1','n1')">Edit</button>
+                <button type="button" class="savebtn" onclick="savenote('t1','n1')">Save</button>
+            </div>
+            <div id="note" class="notes">
+                <input type="text" placeholder="Title" class="title color" id="t1">
+                <textarea name="n1" id="n1" cols="35" rows="10" class="inputnotes color"
+                    placeholder="Add Notes.."></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
